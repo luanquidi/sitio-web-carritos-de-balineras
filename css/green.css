@@ -1,0 +1,22 @@
+
+body{
+  background: url("../img/hojas.jpg");
+  background-attachment: fixed;
+}
+
+#logo{
+  background: #235E3D;
+}
+
+.nav li:hover{
+  transition: all 600ms ease;
+  background: #235E3D;
+}
+.boton{
+  border: 2px solid #235E3D;
+  color: #235E3D;
+}
+.boton:hover{
+  transition: all 800ms ease;
+  background: #235E3D;
+}

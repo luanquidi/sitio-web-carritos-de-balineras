@@ -1,0 +1,21 @@
+body{
+  background: url("../img/rojo.jpg");
+  background-attachment: fixed;
+}
+
+#logo{
+  background: #CA3413;
+}
+
+.nav li:hover{
+  transition: all 600ms ease;
+  background: #CA3413;
+}
+.boton{
+  border: 2px solid #CA3413;
+  color: #CA3413;
+}
+.boton:hover{
+  transition: all 800ms ease;
+  background: #CA3413;
+}

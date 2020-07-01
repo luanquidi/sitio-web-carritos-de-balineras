@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Luis Angel</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+    <!-- ----------------- -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- ---------------------- -->
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+    <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
+    <!-- plugin validadicon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+    <!-- Mi script -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </head>
+  <body>
+    <div id="selector-theme">
+      <div id="to-green"></div>
+      <div id="to-red"></div>
+      <div id="to-blue"></div>
+    </div>
+    <div class="container" id="global">
+
+      <!-- Cabecera -->
+      <div class="row mt-3">
+
+        <div class="col-12 header">
+          <div id="logo">
+            <h1>Carritos Balineras</h1>
+          </div>
+          <div class="clearfix"></div>
+          <nav>
+            <ul class="nav justify-content-center"id="menu">
+              <li class="nav-item ">
+                <a href="index.html" class="nav-link">Reglamento</a>
+              </li>
+              <li class="nav-item ">
+                <a href="reloj.html" class="nav-link">Formato Inscripcion/Reloj</a>
+              </li>
+              <li class="nav-item ">
+                <a href="about.html" class="nav-link">Autorizacion a Menores/Sobre mi</a>
+              </li>
+              <li class="nav-item ">
+                <a href="contact.html" class="nav-link">Exo de Resp/Contacto</a>
+              </li>
+              <li class="nav-item ">
+                <a href="#" class="nav-link">Recorridos</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Contenido -->
+      <div class="row mt-3" id="content">
+        <div class="col-8" id="posts">
+          <article id="box">
+            <!-- Formulario de Contacto -->
+              <h2>Contacto</h2>
+              <form action="" method="POST" id="form-contact">
+                <label for="name">Nombre</label>
+                <input data-validation="alphanumeric" type="text" name="name">
+
+                <label for="lastname">Apellidos</label>
+                <input data-validation="alphanumeric" type="text" name="lastname">
+
+                <label for="correo">Email</label>
+                <input data-validation="email" type="email" name="correo">
+
+                <label for="sex">Sexo</label>
+                <select class="" name="sex" data-validation="required">
+                  <option value="men">Hombre</option>
+                  <option value="woman">Mujer</option>
+                </select>
+
+                <label for="date" data-validation="date" data-validation-format="dd-mm-yyy">Fecha de nacimiento</label>
+                <input type="text" name="date">
+
+                <label for="old" data-validation="number">Edad</label>
+                <input type="number" name="old">
+
+                <input type="submit" name="" value="Enviar">
+
+              </form>
+
+          </article>
+        </div>
+        <aside class="col-4" id="sidebar">
+          <div id="about">
+            <h4><span>¿Quien soy?</span></h4>
+            <img src="img/caracol.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt officia ipsa dolores sunt ipsum sed, repellat facere rerum inventore delectus.</p>
+          </div>
+          <div id="login">
+            <h4><span>Identificate</span></h4>
+            <form class="" method="post">
+              <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" placeholder="Nombre" id="form_name">
+                <label for="correo"  >Correo</label>
+                <input type="email" name="correo" placeholder="Correo" id="form_email">
+                <label for="contrasena">Contraseña</label>
+                <input type="password" name="contrasena" placeholder="Contraseña" id="form_clave">
+                <center><input type="submit" name="" value="Enviar" class="boton2"></center>
+              </div>
+            </form>
+          </div>
+        </aside>
+      </div>
+
+      <footer class="row mt-3 footer">
+        <div class="col">
+          Luis Angel Quiñones Diaz &copy; 2018
+          <a href="#" class="subir">Ir arriba</a>
+        </div>
+      </footer>
+
+    </div>
+  </body>
+</html>
